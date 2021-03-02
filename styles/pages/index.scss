@@ -1,0 +1,50 @@
+@import '../abstracts/colors.scss';
+
+.header {
+  height: 3.75rem;
+  background-color: $brand;
+  width: 100%;
+  min-width: 400px;
+  padding-right: 10px;
+}
+
+.logo {
+  margin-right: 20px;
+  width: 3.75rem;
+  height: 2.3125rem;
+}
+
+.bar {
+  display: flex;
+  height: 2.5rem;
+  min-width: 250px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.input-text-bar {
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  background-color: $bg-color;
+  border-radius: 0;
+  height: 100%;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.search {
+  height: 1.125rem;
+  width: 1.125rem;
+}
