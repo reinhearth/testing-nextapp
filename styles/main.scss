@@ -1,0 +1,38 @@
+/* COLORS */
+@import './abstracts/colors.scss';
+
+/* TYPOGRAPHY */
+@import './base/typography.scss';
+
+/* VARIABLES */
+@import './abstracts/variables.scss';
+
+/*GLOBAL STYLES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: $bg-color;
+  color: $text;
+  min-width: 650px;
+
+  font-size: 1rem;
+
+  @media screen and (max-width: $lg) {
+    font-size: 75%; //1rem = 12px; 12px / 16px = 75%
+  }
+
+  @media screen and (max-width: $md) {
+    font-size: 56.25%; //1rem = 9px; 9px / 16px = 56.25%
+  }
+
+  @media screen and (max-width: $sm) {
+    font-size: 50%; //1rem = 8px; 8px / 16px = 50%;
+  }
+}

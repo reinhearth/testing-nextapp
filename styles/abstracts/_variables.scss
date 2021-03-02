@@ -1,0 +1,44 @@
+/* MARGIN CUSTOM */
+
+.mc-1 {
+  margin: 1rem 0;
+
+  &__b {
+    margin-bottom: 1rem;
+  }
+}
+
+.mc-2 {
+  margin: 2rem 0;
+
+  &__b {
+    margin-bottom: 2rem;
+  }
+
+  &__l {
+    margin-left: 2rem;
+  }
+
+  &__x {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.mc-all {
+  margin: 1rem;
+}
+
+//BREAKPOINTS
+
+// Small devices
+$sm: 576px;
+
+// Medium devices
+$md: 768px;
+
+// Large devices
+$lg: 992px;
+
+// Extra large devices
+$xl: 1200px;

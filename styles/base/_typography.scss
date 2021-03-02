@@ -1,0 +1,60 @@
+@import "../abstracts/colors.scss";
+
+//INPUT TEXT
+.input-text {
+  font-size: 1rem;
+  color: $text-dark;
+}
+
+//ROUTE TEXT
+.route-text {
+  font-size: 0.875rem;
+}
+
+//PLACE TEXT
+.place-text {
+  font-size: 0.75rem;
+}
+
+//PRICE TEXT
+.price-text {
+  font-size: 1.5rem;
+  color: $text-dark;
+}
+
+//PRODUCT TEXT
+.product-text {
+  font-size: 1.125rem;
+  color: $text-dark;
+}
+
+//DESCRIPTION TEXT
+.description-text {
+  font-size: 1.75rem;
+  color: $text-dark;
+}
+
+//DESCRIPTION TEXT
+.product-description-text {
+  font-size: 1rem;
+}
+
+//CONDITION TEXT
+.condition-text {
+  font-size: 0.875rem;
+  color: $text-dark;
+}
+
+//PRODUCT TITLE
+.product-title {
+  font-size: 1.5rem;
+  color: $text-dark;
+  font-weight: bold;
+}
+
+//PRICE TITLE
+.price-title {
+  font-size: 2.875rem;
+  color: $text-dark;
+  font-weight: bold;
+}
