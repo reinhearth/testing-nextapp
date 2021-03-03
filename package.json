@@ -29,6 +29,7 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
+    "apollo-server-micro": "^2.21.0",
     "bootstrap": "^5.0.0-beta2",
     "next": "^10.0.7",
     "react": "^17.0.1",
