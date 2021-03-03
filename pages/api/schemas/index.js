@@ -13,7 +13,7 @@ export const typeDefs = gql`
     picture: String!
     condition: String!
     free_shipping: Boolean!
-    sold_quantity: Number!
+    sold_quantity: Int!
     description: String!
   }
 
@@ -24,8 +24,8 @@ export const typeDefs = gql`
 
   type Price {
       currency: String!
-      amount: Number!
-      decimals: String!
+      amount: Int!
+      decimals: Int
   }
 
   type ItemSearch {
@@ -44,7 +44,7 @@ export const typeDefs = gql`
   }
   
   type Query {
-    getSearchItems(query: String!): SearchItems
+    getSearchItems(search: String!): SearchItems
     getDescriptionItem(id: String!): DescriptionItem!
   }
 `;
