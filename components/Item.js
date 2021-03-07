@@ -1,4 +1,5 @@
-function Item() {
+const Item = () => {
+
   return (
     <div className="container">
       <div className="row">
@@ -27,6 +28,6 @@ function Item() {
       </div>
     </div>
   );
-}
+};
 
 export default Item;

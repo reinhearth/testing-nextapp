@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Categories from '../../components/Categories';
 
-function defi() {
+const details = () => {
   return (
     <>
       <Categories />
@@ -36,6 +36,6 @@ function defi() {
       </div>
     </>
   );
-}
+};
 
-export default defi;
+export default details;
