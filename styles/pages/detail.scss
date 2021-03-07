@@ -1,0 +1,28 @@
+@import '../abstracts/colors.scss';
+@import '../abstracts/variables.scss';
+
+.product-details {
+  background: #fff;
+
+  &__left {
+    flex: 0 0 70%;
+    text-align: justify;
+  }
+
+  &__right {
+    flex: 0 0 30%;
+    padding-right: 18.5px;
+  }
+}
+
+.product {
+  @media screen and (max-width: $lg) {
+    width: 300px;
+  }
+}
+
+.action-btn {
+  width: 80%;
+  background-color: $blue;
+  color: #fff;
+}
