@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import Categories from '../../components/Categories';
+import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
 describe('Categories Component', () => {

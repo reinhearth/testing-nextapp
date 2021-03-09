@@ -37,7 +37,11 @@ const Search = () => {
                   className="input-text input-text-bar"
                   ref={searchTextRef}
                 />
-                <button className="btn button" onClick={searchItems}>
+                <button
+                  className="btn button"
+                  type="submit"
+                  onClick={searchItems}
+                >
                   <img src="/ic_Search.png" alt="search" className="search" />
                 </button>
               </div>

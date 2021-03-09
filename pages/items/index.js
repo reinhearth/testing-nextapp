@@ -62,6 +62,7 @@ index.getInitialProps = async (ctx) => {
     }),
   });
   const json = await res.json();
+  console.log(json.data);
   return { searchInfo: json.data };
 };
 

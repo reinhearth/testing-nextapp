@@ -11,16 +11,24 @@ const Item = (props) => {
           <div className="mc-all">
             <img
               src={props.item.picture}
-              alt="Dios Pistachi"
+              alt={props.item.title}
               className="image"
             />
           </div>
           <div className="mc-1 d-flex item__text">
             <div className="item__text--product mc-1">
               <div className="d-flex align-items-center mc-2__b">
-                <p className="price-text mb-0">${props.item.price.amount}</p>
+                <p className="price-text mb-0">
+                  {props.item.price.decimals
+                    ? `$ ${props.item.price.amount}.${props.item.price.decimals}`
+                    : `$ ${props.item.price.amount}`}
+                </p>
                 {props.item.free_shipping ? (
-                  <img src="/ic_shipping.png" alt="ic" className="icon" />
+                  <img
+                    src="/ic_shipping.png"
+                    alt="image_free_shipping"
+                    className="icon"
+                  />
                 ) : (
                   <></>
                 )}

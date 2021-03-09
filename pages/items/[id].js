@@ -37,7 +37,9 @@ const details = (props) => {
                 {props.details.getDescriptionItem.item.title}
               </p>
               <p className="mc-2 price-title">
-                ${props.details.getDescriptionItem.item.price.amount}
+                {props.details.getDescriptionItem.item.price.decimals
+                  ? `$ ${props.details.getDescriptionItem.item.price.amount}.${props.details.getDescriptionItem.item.price.decimals}`
+                  : `$ ${props.details.getDescriptionItem.item.price.amount}`}
               </p>
               <button className="btn action-btn">Comprar</button>
             </div>
