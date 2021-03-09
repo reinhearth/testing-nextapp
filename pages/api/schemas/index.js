@@ -35,6 +35,7 @@ export const typeDefs = gql`
       picture: String!
       condition: String!
       free_shipping: Boolean!
+      from: String!
   }
 
   type ItemDescription {
