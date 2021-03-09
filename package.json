@@ -1,7 +1,12 @@
 {
   "name": "mercado_nextjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "A test app for a dev application job for mercado libre",
+  "author": {
+    "name": "Raphael Vazquez",
+    "email": "raphael.g.work@gmail.com",
+    "url": "https://www.linkedin.com/in/raphael-vazquez/"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "next dev",

@@ -30,7 +30,7 @@ const index = (props) => {
 
 index.getInitialProps = async (ctx) => {
   // eslint-disable-next-line no-undef
-  const res = await fetch('http://localhost:3000/api/graphql', {
+  const res = await fetch(`${process.env.API_URL}/api/graphql`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -62,7 +62,6 @@ index.getInitialProps = async (ctx) => {
     }),
   });
   const json = await res.json();
-  console.log(json.data);
   return { searchInfo: json.data };
 };
 
