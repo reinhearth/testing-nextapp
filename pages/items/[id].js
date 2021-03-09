@@ -12,7 +12,7 @@ const details = (props) => {
               <div className="mc-2 mc-2__x d-flex justify-content-center">
                 <img
                   src={props.details.getDescriptionItem.picture}
-                  alt="Dios Pistachi"
+                  alt="image_product"
                   className="product"
                 />
               </div>

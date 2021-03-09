@@ -1,5 +1,10 @@
 const index = () => {
-  return <div className="container">Index page</div>;
+  return (
+    <div className="container">
+      Prueba tecnica para Mercado Libre, Aplicacion construida en NextJS, Inicie
+      una busqueda!
+    </div>
+  );
 };
 
 export default index;

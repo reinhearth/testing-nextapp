@@ -11,7 +11,7 @@ const index = (props) => {
   };
 
   if (!props.searchInfo || !props.searchInfo.getSearchItems) {
-    return <h1>Error al procesar la busqueda, intentelo de nuevo!</h1>;
+    return <h2>Error al procesar la busqueda, intentelo de nuevo!</h2>;
   }
 
   return (
