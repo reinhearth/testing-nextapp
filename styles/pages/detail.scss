@@ -16,6 +16,8 @@
 }
 
 .product {
+  width: 60%;
+
   @media screen and (max-width: $lg) {
     width: 300px;
   }
@@ -25,4 +27,11 @@
   width: 80%;
   background-color: $blue;
   color: #fff;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }

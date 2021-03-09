@@ -1,6 +1,10 @@
 const details = (props) => {
   if (!props.details) {
-    return <h1>Producto no encontrado, intente una nueva busqueda!</h1>;
+    return (
+      <div className="not-found">
+        <h2>Producto no encontrado, intente una nueva busqueda!</h2>
+      </div>
+    );
   }
 
   return (
@@ -8,7 +12,7 @@ const details = (props) => {
       <div className="container">
         <div className="row">
           <div className="d-flex product-details mc-2__b">
-            <div className="product-details__left">
+            <div className="product-details__left col-8">
               <div className="mc-2 mc-2__x d-flex justify-content-center">
                 <img
                   src={props.details.getDescriptionItem.picture}
@@ -24,7 +28,7 @@ const details = (props) => {
               </div>
             </div>
 
-            <div className="mc-2 product-details__right">
+            <div className="mc-2 product-details__right col-4">
               <p className="mc-1__b condition-text">
                 {props.details.getDescriptionItem.condition} -{' '}
                 {props.details.getDescriptionItem.sold_quantity} sold

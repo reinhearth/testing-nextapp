@@ -11,7 +11,11 @@ const index = (props) => {
   };
 
   if (!props.searchInfo || !props.searchInfo.getSearchItems) {
-    return <h2>Error al procesar la busqueda, intentelo de nuevo!</h2>;
+    return (
+      <div className="not-found">
+        <h2>Producto no encontrado, intente una nueva busqueda!</h2>
+      </div>
+    );
   }
 
   return (
