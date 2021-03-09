@@ -52,7 +52,7 @@ const details = (props) => {
 
 details.getInitialProps = async (ctx) => {
   // eslint-disable-next-line no-undef
-  const res = await fetch(`${process.env.API_URL}`, {
+  const res = await fetch(`${process.env.VERCEL_URL}/api/graphql`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
