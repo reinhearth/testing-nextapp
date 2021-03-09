@@ -4,13 +4,14 @@ import Categories from '../../components/Categories';
 import { useRouter } from 'next/router';
 
 const index = (props) => {
+  console.log(props);
   const router = useRouter();
   const findDetailItem = (itemId) => {
     const fullPath = `/items/${itemId}`;
     router.push(fullPath);
   };
 
-  if (!props.searchInfo) {
+  if (!props.searchInfo || !props.searchInfo.getSearchItems) {
     return <h1>Error al procesar la busqueda, intentelo de nuevo!</h1>;
   }
 
