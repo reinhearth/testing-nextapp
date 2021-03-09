@@ -4,7 +4,6 @@ import Categories from '../../components/Categories';
 import { useRouter } from 'next/router';
 
 const index = (props) => {
-  console.log(props);
   const router = useRouter();
   const findDetailItem = (itemId) => {
     const fullPath = `/items/${itemId}`;
