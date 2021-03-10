@@ -30,7 +30,7 @@ const index = (props) => {
 
 index.getInitialProps = async (ctx) => {
   // eslint-disable-next-line no-undef
-  const res = await fetch(process.env.VERCEL_URL + '/api/graphql', {
+  const res = await fetch('/api/graphql', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
