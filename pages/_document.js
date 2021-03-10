@@ -13,7 +13,9 @@ class MyDocument extends Document {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta title="MercadoLibre Test" />
-          <link rel="icon" sizes="96x96" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="apple-touch-icon" href="/favicon.ico" />
+          <title>Mercado Libre | Front End Test</title>
         </Head>
         <body>
           <Main />
